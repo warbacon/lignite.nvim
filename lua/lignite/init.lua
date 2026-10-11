@@ -38,6 +38,8 @@ M._load = function()
 	end
 	vim.g.colors_name = "lignite"
 
+	local blend = require("lignite.util").blend
+
 	---@type table<string,vim.api.keyset.highlight>
 	local highlights = {
 		Normal = { fg = M.palette.fg0, bg = M.palette.bg0 },
@@ -82,6 +84,11 @@ M._load = function()
 		DiagnosticOk = { fg = M.palette.green },
 		DiagnosticHint = { fg = M.palette.blue },
 		DiagnosticInfo = { fg = M.palette.aqua },
+		DiagnosticVirtualTextError = { fg = M.palette.red, bg = blend(M.palette.bg0, M.palette.red, 0.2) },
+		DiagnosticVirtualTextWarn = { fg = M.palette.yellow, bg = blend(M.palette.bg0, M.palette.yellow, 0.2) },
+		DiagnosticVirtualTextOk = { fg = M.palette.green, bg = blend(M.palette.bg0, M.palette.green, 0.2) },
+		DiagnosticVirtualTextHint = { fg = M.palette.blue, bg = blend(M.palette.bg0, M.palette.blue, 0.2) },
+		DiagnosticVirtualTextInfo = { fg = M.palette.aqua, bg = blend(M.palette.bg0, M.palette.aqua, 0.2) },
 		DiagnosticUnderlineError = { sp = M.palette.red, undercurl = true },
 		DiagnosticUnderlineWarn = { sp = M.palette.yellow, undercurl = true },
 		DiagnosticUnderlineOk = { sp = M.palette.green, undercurl = true },
@@ -122,12 +129,12 @@ M._load = function()
 		["@markup.heading.5"] = { fg = M.palette.aqua, bold = true },
 		["@markup.heading.6"] = { fg = M.palette.aqua, bold = true },
 
-		RenderMarkdownH1Bg = { fg = M.palette.bg0, bg = M.palette.green, bold = true },
-		RenderMarkdownH2Bg = { fg = M.palette.bg0, bg = M.palette.yellow, bold = true },
-		RenderMarkdownH3Bg = { fg = M.palette.bg0, bg = M.palette.purple, bold = true },
-		RenderMarkdownH4Bg = { fg = M.palette.bg0, bg = M.palette.blue, bold = true },
-		RenderMarkdownH5Bg = { fg = M.palette.bg0, bg = M.palette.aqua, bold = true },
-		RenderMarkdownH6Bg = { fg = M.palette.bg0, bg = M.palette.aqua, bold = true },
+		RenderMarkdownH1Bg = { fg = M.palette.green, bg = blend(M.palette.bg0, M.palette.green, 0.2), bold = true },
+		RenderMarkdownH2Bg = { fg = M.palette.yellow, bg = blend(M.palette.bg0, M.palette.yellow, 0.2), bold = true },
+		RenderMarkdownH3Bg = { fg = M.palette.purple, bg = blend(M.palette.bg0, M.palette.purple, 0.2), bold = true },
+		RenderMarkdownH4Bg = { fg = M.palette.blue, bg = blend(M.palette.bg0, M.palette.blue, 0.2), bold = true },
+		RenderMarkdownH5Bg = { fg = M.palette.aqua, bg = blend(M.palette.bg0, M.palette.aqua, 0.2), bold = true },
+		RenderMarkdownH6Bg = { fg = M.palette.aqua, bg = blend(M.palette.bg0, M.palette.aqua, 0.2), bold = true },
 
 		MiniIconsAzure = { fg = M.palette.blue },
 		MiniIconsBlue = { fg = M.palette.blue },
