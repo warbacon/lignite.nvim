@@ -60,7 +60,7 @@ M._load = function()
 		Pmenu = { bg = M.palette.bg2 },
 		PmenuSel = { bg = M.palette.bg3 },
 		PmenuThumb = { bg = M.palette.bg5 },
-		PmenuKind = { fg = M.palette.red },
+		PmenuKind = { fg = M.palette.aqua },
 		PmenuExtra = { fg = M.palette.gray },
 		PmenuBorder = { fg = M.palette.gray },
 
@@ -148,6 +148,16 @@ M._load = function()
 		MiniIconsPurple = { fg = M.palette.purple },
 		MiniIconsRed = { fg = M.palette.red },
 		MiniIconsYellow = { fg = M.palette.yellow },
+
+		BlinkCmpKindText = { link = "NonText" },
+		BlinkCmpKindSnippet = { link = "NonText" },
+		BlinkCmpKindFunction = { fg = M.palette.green },
+		BlinkCmpKindString = { fg = M.palette.green },
+		BlinkCmpKindFolder = { fg = M.palette.blue },
+		BlinkCmpKindVariable = { fg = M.palette.blue },
+		BlinkCmpKindConstant = { fg = M.palette.blue },
+		BlinkCmpKindClass = { fg = M.palette.yellow },
+		BlinkCmpKindEnum = { fg = M.palette.yellow },
 	}
 
 	for group, hl in pairs(highlights) do
