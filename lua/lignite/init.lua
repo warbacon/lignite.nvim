@@ -49,7 +49,7 @@ M._load = function()
 		LineNr = { fg = M.palette.bg5 },
 		Visual = { bg = M.palette.bg2 },
 		ModeMsg = { fg = M.palette.yellow, bold = true },
-		ColorColumn = { bg = M.palette.bg2 },
+		ColorColumn = { bg = M.palette.bg1 },
 		CursorLine = { bg = M.palette.bg1 },
 		MatchParen = { bg = M.palette.bg3, bold = true },
 		SignColumn = { link = "LineNr" },
