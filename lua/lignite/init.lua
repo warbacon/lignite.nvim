@@ -122,6 +122,9 @@ M._load = function()
 		["@tag.attribute"] = { link = "Identifier" },
 		["@lsp.type.delimiter"] = { link = "Delimiter" },
 
+		["@markup.link"] = { underline = false },
+		["@markup.link.label"] = { fg = M.palette.aqua },
+		["@markup.link.url"] = { fg = M.palette.purple, underline = true },
 		["@markup.heading.1"] = { fg = M.palette.green, bold = true },
 		["@markup.heading.2"] = { fg = M.palette.yellow, bold = true },
 		["@markup.heading.3"] = { fg = M.palette.purple, bold = true },
