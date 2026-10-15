@@ -68,8 +68,10 @@ M._load = function()
 		FloatBorder = { fg = M.palette.gray },
 
 		Added = { fg = M.palette.green },
-		Changed = { fg = M.palette.blue },
+		Changed = { fg = M.palette.aqua },
 		Removed = { fg = M.palette.red },
+		DiffAdd = { fg = M.palette.green, bold = true },
+		DiffChange = { fg = M.palette.aqua, bold = true },
 		DiffDelete = { fg = M.palette.red, bold = true },
 
 		Error = { fg = M.palette.red, bold = true },

@@ -58,7 +58,7 @@ vim.cmd.colorscheme("lignite")
 - mini.icons
 - snacks.picker
 - render-markdown.nvim
-- lualine.nvim _(partial)_
+- lualine.nvim
 - blink.cmp
 
 ## Extras
