@@ -61,6 +61,10 @@ vim.cmd.colorscheme("lignite")
 - lualine.nvim _(partial)_
 - blink.cmp
 
+## Extras
+
+- kitty
+
 ## License
 
 lignite.nvim is released under the [MIT License](LICENSE).

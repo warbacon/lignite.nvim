@@ -19,4 +19,14 @@ M.blend = function(bg, color, alpha)
 	return string.format("#%02x%02x%02x", mix(br, cr), mix(bgreen, cg), mix(bb, cb))
 end
 
+---@param str string
+---@param table table
+function M.template(str, table)
+	return (
+		str:gsub("($%b{})", function(w)
+			return vim.tbl_get(table, unpack(vim.split(w:sub(3, -2), ".", { plain = true }))) or w
+		end)
+	)
+end
+
 return M
