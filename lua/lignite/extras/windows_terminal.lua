@@ -5,7 +5,7 @@ M.generate = function()
 	local util = require("lignite.util")
 	local palette = require("lignite").palette
 
-	local content = util.template(
+	local colorscheme = util.template(
 		[[
 {
 	"name": "Lignite",
@@ -34,8 +34,31 @@ M.generate = function()
 		palette
 	)
 
+	local theme = util.template(
+		[[
+{
+	"name": "Lignite",
+	"tab": {
+		"background": "terminalBackground",
+		"unfocusedBackground": "#00000000"
+	},
+	"tabRow": {
+		"background": "${bg1}",
+		"unfocusedBackground": "${bg2}"
+	},
+	"window": {
+		"applicationTheme": "dark",
+		"frame": "${orange}",
+		"unfocusedFrame": "${bg2}"
+	}
+}
+]],
+		palette
+	)
+
 	return {
-		{ filename = "lignite.json", content = content },
+		{ filename = "lignite-colorscheme.json", content = colorscheme },
+		{ filename = "lignite-theme.json", content = theme },
 	}
 end
 

@@ -1,0 +1,16 @@
+{
+	"name": "Lignite",
+	"tab": {
+		"background": "terminalBackground",
+		"unfocusedBackground": "#00000000"
+	},
+	"tabRow": {
+		"background": "#282828",
+		"unfocusedBackground": "#3c3836"
+	},
+	"window": {
+		"applicationTheme": "dark",
+		"frame": "#fe8019",
+		"unfocusedFrame": "#3c3836"
+	}
+}
