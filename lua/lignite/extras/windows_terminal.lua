@@ -48,7 +48,7 @@ M.generate = function()
 	},
 	"window": {
 		"applicationTheme": "dark",
-		"frame": "${orange}",
+		"frame": "${green}",
 		"unfocusedFrame": "${bg2}"
 	}
 }
