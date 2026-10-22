@@ -1,0 +1,22 @@
+$env:FZF_DEFAULT_OPTS = @(
+    $env:FZF_DEFAULT_OPTS
+    '--highlight-line'
+    '--color=fg:#ebdbb2'
+    '--color=bg:#1c1c1c'
+    '--color=border:#928374'
+    '--color=separator:#928374'
+    '--color=gutter:#1c1c1c'
+    '--color=scrollbar:#b8bb26'
+    '--color=hl:#fe8019'
+    '--color=hl+:#fe8019'
+    '--color=fg+:#ebdbb2'
+    '--color=bg+:#3c3836'
+    '--color=pointer:#fe8019'
+    '--color=prompt:#b8bb26'
+    '--color=spinner:#b8bb26'
+    '--color=marker:#b8bb26'
+    '--color=header:#b8bb26'
+    '--color=info:#fabd2f'
+    '--color=preview-border:#928374'
+    '--color=preview-scrollbar:#b8bb26'
+) -join " "
