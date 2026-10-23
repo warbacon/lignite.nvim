@@ -14,7 +14,9 @@ Neovim ports exist, but they either lack support for modern plugins or make
 odd choices in the adaptation.
 
 Lignite is built exclusively for Neovim, with tree-sitter and LSP highlighting
-as first-class citizens, and aims to keep up with the major plugins.
+as first-class citizens, and aims to keep up with the major plugins. It's
+designed to get highlight groups right from the start, so it doesn't need
+constant patching, and stays small and fast as a result.
 
 - **Why not the original [gruvbox](https://github.com/morhetz/gruvbox)?** It
   predates tree-sitter and Neovim's LSP client, has no support for Neovim
