@@ -66,6 +66,7 @@ vim.cmd.colorscheme("lignite")
 - kitty
 - Windows Terminal
 - fzf
+- Alacritty
 
 ## License
 
