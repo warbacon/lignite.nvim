@@ -68,6 +68,7 @@ vim.cmd.colorscheme("lignite")
 - fzf
 - Alacritty
 - foot
+- Ghostty
 
 ## License
 
