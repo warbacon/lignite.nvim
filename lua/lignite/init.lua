@@ -77,9 +77,10 @@ M._load = function()
 		Error = { fg = M.palette.red, bold = true },
 		Todo = { fg = M.palette.blue },
 
-		MoreMsg = { fg = M.palette.blue },
 		ErrorMsg = { fg = M.palette.red },
+		WarningMsg = { fg = M.palette.yellow },
 		OkMsg = { fg = M.palette.green },
+		MoreMsg = { fg = M.palette.blue },
 		Question = { fg = M.palette.aqua },
 		DiagnosticError = { fg = M.palette.red },
 		DiagnosticWarn = { fg = M.palette.yellow },
